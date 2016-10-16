@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================================================= -->
+<project name="Plealog-bionfo-seqvertor" default="help" basedir=".">
+
+	<property name="pbc.libName"    value="pb-seqvertor" />
+	<property name="pbc.LibVersion" value="2.0.0" />
+
+	<property name="compile.optimize" value="on" />
+	<property name="compile.debug"    value="off" />
+
+	<property name="src"     value="${basedir}/src" />
+	<property name="jar"     value="${basedir}/jar" />
+
+	<property name="distrib"  value="${basedir}/distrib" />
+	<property name="Dlib"     value="${distrib}/lib" />
+	<property name="Dsrc"     value="${distrib}/src" />
+
+	<property name="pbc.libJar"  value="${distrib}/${pbc.libName}-${pbc.LibVersion}.jar"/>
+
+	<path id="class.path">
+		<pathelement path="${classpath}"/>
+		<fileset dir="${jar}">
+			<include name="**/*.jar"/>
+		</fileset>
+		<pathelement location="${Dlib}"/>
+	</path>
+
+	<!-- ============================================================= -->
+	<target name="help">
+		<echo>Ant task to handle pb-seqvertor project.</echo>
+		<echo/>
+		<echo>      compile: compile the code.</echo>
+		<echo>  makedistrib: compile and make JAR of the PB-SeqVertor system.</echo>
+	</target>
+
+	<!-- ============================================================= -->
+	<target name="prepare">
+		<delete dir="${distrib}"/>
+		<mkdir  dir="${Dlib}"/>
+		<mkdir  dir="${Dsrc}"/>
+	</target>
+
+	<!-- ============================================================= -->
+	<target name="compile" depends="prepare">
+		<copy todir="${Dsrc}">
+			<fileset dir="${src}">
+				<!-- API -->
+				<include name="bzh/plealog/bioinfo/seqvertor/**"/>
+			</fileset>
+		</copy>
+		<javac srcdir="${Dsrc}"
+          destdir="${Dlib}"
+	        classpathref="class.path"
+          debug="${compile.debug}"
+          optimize="${compile.optimize}"
+          >
+		</javac>
+	</target>
+
+	<!-- ============================================================= -->
+	<target name="makedistrib" depends="compile" >
+		<jar destfile="${pbc.libJar}">
+			<fileset dir="${Dlib}">
+				<include name="bzh/plealog/bioinfo/**"/>
+			</fileset>
+			<fileset file="${basedir}/LICENSE.TXT" />
+			<fileset file="${basedir}/NOTICE.TXT" />
+			<manifest>
+				<attribute name="Built-By" value="Patrick G. Durand"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

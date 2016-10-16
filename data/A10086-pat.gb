@@ -1,0 +1,66 @@
+LOCUS       A10086                   335 bp    RNA     linear   PAT 14-NOV-2006
+DEFINITION  Cucumber mosaic virus satellite I 17N.
+ACCESSION   A10086
+VERSION     A10086.1  GI:492905
+KEYWORDS    .
+SOURCE      Cucumber mosaic virus satellite RNA
+  ORGANISM  Cucumber mosaic virus satellite RNA
+            Viruses; Satellites; Satellite Nucleic Acids; Single stranded RNA
+            satellites; Small linear single stranded RNA satellites.
+REFERENCE   1  (bases 1 to 335)
+  AUTHORS   Tepfer,M., Jacquemont,M. and Laucquin,G.
+  TITLE     Method for obtaining transgenic plants, intregration vector used
+            and plants obtained
+  JOURNAL   Patent: EP 0325066-A 1 26-JUL-1989;
+            INSTITUT NATIONAL DE LA RECHERCHE AGRONOMIQUE (INRA)
+FEATURES             Location/Qualifiers
+     source          1..335
+                     /organism="Cucumber mosaic virus satellite RNA"
+                     /mol_type="unassigned RNA"
+                     /db_xref="taxon:12436"
+     variation       44
+                     /note="in isolates R(1), R(2), and R(3)"
+                     /replace="a"
+     variation       126
+                     /note="in isolates R(2) and R(3)"
+                     /replace="c"
+     variation       218
+                     /note="in isolate D"
+                     /replace="t"
+     variation       224
+                     /note="in isolate D"
+                     /replace="t"
+     variation       225
+                     /note="in isolate R(1)"
+                     /replace="c"
+     variation       230
+                     /note="in isolate D"
+                     /replace="t"
+     variation       296
+                     /note="in isolates R(1), R(2), and R(3)"
+                     /replace="c"
+     variation       314
+                     /note="in isolate 117N(2)"
+                     /replace="a"
+     variation       326
+                     /note="in isolate D"
+                     /replace=""
+     variation       327
+                     /note="in isolate D"
+                     /replace="t"
+     variation       327
+                     /note="in isolates R(1), R(2), and R(3)"
+                     /replace=""
+     variation       328
+                     /replace="g"
+     variation       330..335
+                     /note="in isolate R(2)"
+                     /replace="ttt"
+ORIGIN      
+        1 gttttgtttg atggagaatt gcgcagaggg gttatatctg cgtgaggatc tgtcactcgg
+       61 cggtgtggga tacctccctg ctaaggcggg ttgagtgatg ttccctcgga ctggggaccg
+      121 ctggcttgcg agctatgtcc gctactctca gtactacact ctcatttgag cccccgctca
+      181 gtttgctagc agaacccggc acatggttcg ccgataccat ggaatttcga aagaaacact
+      241 ctgttaggtg gtatgagtca tgacgcacgc agggagaggc taaggcttat gctatgctga
+      301 tctccgtgaa tgtctatcat tcctccacag gaccc
+//

@@ -1,0 +1,50 @@
+ID   DL233279; SV 1; linear; unassigned RNA; PAT; VRL; 368 BP.
+XX
+AC   DL233279;
+XX
+DT   26-NOV-2008 (Rel. 97, Created)
+DT   15-APR-2009 (Rel. 100, Last updated, Version 2)
+XX
+DE   Agent and method for identifying kind of plant.
+XX
+KW   JP 2003199446-A/5.
+XX
+OS   Cucumber mosaic virus (cucumber mosaic cucumovirus)
+OC   Viruses; ssRNA positive-strand viruses, no DNA stage; Bromoviridae;
+OC   Cucumovirus.
+XX
+RN   [1]
+RP   1-368
+RA   Sayama H., Atarashi Y., Konishi C., Ishimura E., Kominato M.;
+RT   "Agent and method for identifying kind of plant";
+RL   Patent number JP2003199446-A/5, 15-JUL-2003.
+RL   NIPPON DEL MONTE CORP.
+XX
+CC   OS   Cucumber mosaic virus
+CC   PN   JP 2003199446-A/5
+CC   PD   15-JUL-2003
+CC   PF   29-OCT-2002 JP 2002314215
+CC   PI   haruki sayama,yasunori atarashi,chiaki konishi,eiji ishimura,
+CC   PI   masayuki kominato
+CC   CC   Strandedness: Single ;
+CC   CC   STRANDEDNESS: single
+CC   CC   MOLECULE TYPE: satellite RNA
+CC   FH   Key             Location/Qualifiers
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..368
+FT                   /organism="Cucumber mosaic virus"
+FT                   /mol_type="unassigned RNA"
+FT                   /db_xref="taxon:12305"
+XX
+SQ   Sequence 368 BP; 74 A; 86 C; 107 G; 101 T; 0 other;
+     gttttgtttg ttggagaatt gcgtagaggg gttatttcta cgtgaggatc catcactagg        60
+     cggtgtgggt tacctccctg ggtagctaca tggtggtgta gggacacctg tagtccgggt       120
+     tgagtgacgc atctcggact ggggacctct ggcgaattaa gtagctaagt ccgctgcttt       180
+     cagctctgcg catttcattt gagcccccgc tcagtttgct agcaagaccc ggcacatggt       240
+     tcgccgttac catggatttc gaaagaaaca ctctgttagg tggtatcgtg gatgacgcac       300
+     gcagggagag gctaaggctt atcgtacgct gatctccgtg aatgtctaca cattcctcta       360
+     caggaccc                                                                368
+//
+

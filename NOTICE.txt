@@ -1,0 +1,25 @@
+This product includes software developed by:
+
+  The Plealog Team (http://www.plealog.com)
+    GAF license is here: http://www.apache.org/licenses/LICENSE-2.0
+    It targets: jgaf
+    Bioinformatics Core is here: https://www.gnu.org/licenses/agpl-3.0.txt
+    It targets: pb-core
+
+  The Biojava Team (http://biojava.org)
+    Biojava license is here: http://www.gnu.org/copyleft/lesser.html
+    It targets: biojava
+    
+  The Apache Software Foundation (http://www.apache.org/)
+    Apache license is here: http://www.apache.org/licenses/LICENSE-2.0
+    It targets: log4j, commons-logging, xerces, xmlParser
+  
+  The Castor Framework Team (http://castor-data-binding.github.io/castor)
+    Castor license is here: http://castor-data-binding.github.io/castor/about/licenses.html
+    It targets: castor-xml
+    
+  The XStream Framework Team (http://x-stream.github.io/):
+    XStream License is here: http://x-stream.github.io/license.html
+    It targets: xstream
+    
+    
