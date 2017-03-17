@@ -18,10 +18,11 @@ package bzh.plealog.bioinfo.seqvertor;
 
 import java.io.StringReader;
 
+import bzh.plealog.bioinfo.api.core.config.CoreSystemConfigurator;
 import bzh.plealog.bioinfo.api.data.feature.FeatureTable;
 import bzh.plealog.bioinfo.api.data.sequence.BankSequenceInfo;
 import bzh.plealog.bioinfo.api.data.sequence.DSequence;
-import bzh.plealog.bioinfo.api.data.sequence.DViewerSystem;
+import bzh.plealog.bioinfo.util.DAlphabetUtils;
 
 /**
  * This class is an implementation of a very basic biological sequence. It is
@@ -91,9 +92,9 @@ public class SequenceDataBag {
   }
 
   public DSequence getDSequence(){
-    DSequence dsequence = DViewerSystem.getSequenceFactory().getSequence(
+    DSequence dsequence = CoreSystemConfigurator.getSequenceFactory().getSequence(
         new StringReader(sequence), 
-        seqType==PROTEIC_TYPE?DViewerSystem.getIUPAC_Protein_Alphabet():DViewerSystem.getIUPAC_DNA_Alphabet());
+        seqType==PROTEIC_TYPE?DAlphabetUtils.getIUPAC_Protein_Alphabet():DAlphabetUtils.getIUPAC_DNA_Alphabet());
     dsequence.createRulerModel(1, 1);
     return dsequence;
   }
